@@ -15,13 +15,13 @@ public class Main {
 
             if(c == 'L'){
                 for(int j = 0; j<x ;j++){
-                    arr[--currPos]++;
+                    arr[currPos--]++;
                 }
             }
 
             if(c == 'R'){
                 for(int j = 0; j<x ;j++){
-                    arr[++currPos]++;
+                    arr[currPos++]++;
                 }
             }
         }
