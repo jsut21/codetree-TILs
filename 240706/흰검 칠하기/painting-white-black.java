@@ -6,11 +6,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int[] arrW = new int[2001];
-        int[] arrB = new int[2001];
-        int[] arrG = new int[2001];
-        int[] arr = new int[2001];
-        int currPos = 1000;
+        int[] arrW = new int[200001];
+        int[] arrB = new int[200001];
+        int[] arrG = new int[200001];
+        int[] arr = new int[200001];
+        int currPos = 100000;
 
         for(int i = 0; i<n; i++){
             int x = sc.nextInt();
@@ -45,7 +45,7 @@ public class Main {
         int countB = 0;
         int countG = 0;
 
-        for(int i = 0; i<2001; i++){
+        for(int i = 0; i<200001; i++){
             if(arrG[i] > 0){
                 countG++;
             } else if(arr[i] > 0){
