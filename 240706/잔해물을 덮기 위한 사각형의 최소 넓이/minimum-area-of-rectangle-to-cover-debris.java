@@ -44,10 +44,12 @@ public class Main {
         int y1 = 2001;
         int x2 = 0;
         int y2 = 0;
+        boolean isNotCoveredAreaExist = false;
 
         for(int j = 0; j<2001; j ++){
             for(int k = 0; k<2001; k++){
                 if(arr[j][k] == 1){
+                    isNotCoveredAreaExist = true;
                     if(j < x1){
                         x1 = j;
                     }
@@ -63,7 +65,11 @@ public class Main {
                 }
             }
         }
-
-        System.out.print(((x2+1)-x1)*((y2+1)-y1));
+        if(isNotCoveredAreaExist == true){
+            System.out.print(((x2+1)-x1)*((y2+1)-y1));
+        } else {
+            System.out.print(0);
+        }
+        
     }
 }
