@@ -8,8 +8,8 @@ public class Main {
         int n = sc.nextInt();
         int m = sc.nextInt();
 
-        int[] arrN = new int[1000];
-        int[] arrM = new int[1000];
+        int[] arrN = new int[1000000];
+        int[] arrM = new int[1000000];
 
         int nCount = 0;
         int mCount = 0;
