@@ -72,7 +72,7 @@ public class Main {
             }
         }
 
-        if(isMeet = false){
+        if(isMeet == false){
             System.out.print(-1);
         }
     }
