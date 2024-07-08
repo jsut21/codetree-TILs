@@ -8,8 +8,8 @@ public class Main {
         int n = sc.nextInt();
         int m = sc.nextInt();
 
-        double[] arrA = new double[1000000];
-        double[] arrB = new double[1000000];
+        int[] arrA = new int[1000000];
+        int[] arrB = new int[1000000];
 
         int tOfA = 0;
         int tOfB = 0;
@@ -18,7 +18,12 @@ public class Main {
             int v = sc.nextInt();
             int t = sc.nextInt();
             for(int j = 0; j<t; j ++){
-                arrA[tOfA++] += (double)v/(double)t;
+                if(tOfA == 0){
+                    arrA[tOfA] = v;
+                } else {
+                    arrA[tOfA] += arrA[tOfA-1] + v; 
+                }
+                tOfA++;  
             }
         }
 
@@ -26,7 +31,12 @@ public class Main {
             int v = sc.nextInt();
             int t = sc.nextInt();
             for(int j = 0; j<t; j ++){
-                arrB[tOfB++] += (double)v/(double)t;
+                if(tOfB == 0){
+                    arrB[tOfB] = v;
+                } else {
+                    arrB[tOfB] += arrB[tOfB-1] + v; 
+                }
+                tOfB++;  
             }
         }
 
