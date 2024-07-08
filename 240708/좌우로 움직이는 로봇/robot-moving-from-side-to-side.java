@@ -70,7 +70,7 @@ public class Main {
         boolean isSamePos = true;
         int count = 0;
         int t = tOfa>tOfb ? tOfb : tOfa;
-        for(int i = 100; i<t; i++){
+        for(int i = 0; i<t; i++){
             if(i>0 && arrA[i-1] != arrB[i-1] && arrA[i] == arrB[i]){
                 count++;
             }
