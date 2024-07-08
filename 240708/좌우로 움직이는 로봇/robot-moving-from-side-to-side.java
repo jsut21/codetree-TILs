@@ -70,13 +70,16 @@ public class Main {
         boolean isSamePos = true;
         int count = 0;
         for(int i = 0; i<1000000; i++){
-            if(i>0 && !isSamePos && arrA[i] == arrB[i]){
-                isSamePos = true;
+            if(i>0 && arrA[i-1] != arrB[i-1] && arrA[i] == arrB[i]){
                 count++;
             }
-            if(arrA[i] != arrB[i]){
-                isSamePos = false;
-            }
+            // if(i>0 && !isSamePos && arrA[i] == arrB[i]){
+            //     isSamePos = true;
+            //     count++;
+            // }
+            // if(arrA[i] != arrB[i]){
+            //     isSamePos = false;
+            // }
         }
 
         System.out.print(count);
