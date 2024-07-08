@@ -10,8 +10,8 @@ public class Main {
         int p = sc.nextInt();
         int t = sc.nextInt();
 
-        int[] handshake = new int[n];
-        boolean[] isInfected = new boolean[n];
+        int[] handshake = new int[n+1];
+        boolean[] isInfected = new boolean[n+1];
         int[][] arrT = new int[251][2];
 
         isInfected[p] = true;
