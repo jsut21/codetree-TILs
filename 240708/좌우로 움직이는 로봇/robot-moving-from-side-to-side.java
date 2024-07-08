@@ -69,12 +69,10 @@ public class Main {
 
         boolean isSamePos = true;
         int count = 0;
-        for(int i = 0; i<1000000; i++){
+        int t = tOfa > tOfb ? tOfa : tOfb;
+        for(int i = 0; i<t; i++){
             if(tOfa < i){
                 arrA[i] = arrA[tOfa-1];
-                if(tOfb < i){
-                    break;
-                }
             }
             if(tOfb < i){
                 arrB[i] = arrB[tOfb-1];
