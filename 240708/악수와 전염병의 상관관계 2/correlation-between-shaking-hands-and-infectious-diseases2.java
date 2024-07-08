@@ -16,7 +16,7 @@ public class Main {
 
         isInfected[p] = true;
 
-        for(int i = 1; i<t; i++){
+        for(int i = 0; i<t; i++){
             int tt = sc.nextInt();
             int x = sc.nextInt();
             int y = sc.nextInt();
