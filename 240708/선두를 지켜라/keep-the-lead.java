@@ -11,37 +11,8 @@ public class Main {
         double[] arrA = new double[1000000];
         double[] arrB = new double[1000000];
 
-        // int[] arrN = new int[1000];
-        // int[] arrNt = new int[1000];
-        // int[] arrM = new int[1000];
-        // int[] arrMt = new int[1000];
-
-        // double aPos = 0;
-        // double bPos = 0;
-        // int maxT = 0;
         int tOfA = 0;
         int tOfB = 0;
-
-        // for(int i = 0 ; i < n ; i++){
-        //     arrN[i] = sc.nextInt();
-        //     arrNt[i] = sc.nextInt();
-        //     maxT+=arrNt[i];
-        // }
-
-        // for(int i = 0 ; i < m ; i++){
-        //     arrM[i] = sc.nextInt();
-        //     arrMt[i] = sc.nextInt();
-        // }
-
-        // boolean isALead = false;
-        // int count = 0;
-
-        // for(int i = 0; i <maxT; i ++){
-        //     aPos += (double)arrN[i]/arrNt[i];
-        //     bPos += (double)arrM[i]/arrMt[i];
-        // }
-
-
 
         for(int i = 0; i<n; i ++){
             int v = sc.nextInt();
