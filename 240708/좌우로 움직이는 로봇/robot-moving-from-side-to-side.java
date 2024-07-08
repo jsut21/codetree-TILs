@@ -69,11 +69,20 @@ public class Main {
 
         boolean isSamePos = true;
         int count = 0;
-        int t = tOfa>tOfb ? tOfb : tOfa;
-        for(int i = 0; i<t; i++){
+        for(int i = 0; i<1000000; i++){
+            if(tOfa < i){
+                arrA[i] = arrA[tOfa-1];
+                if(tOfb < i){
+                    break;
+                }
+            }
+            if(tOfb < i){
+                arrB[i] = arrB[tOfb-1];
+            }
             if(i>0 && arrA[i-1] != arrB[i-1] && arrA[i] == arrB[i]){
                 count++;
             }
+
         }
 
         System.out.print(count);
