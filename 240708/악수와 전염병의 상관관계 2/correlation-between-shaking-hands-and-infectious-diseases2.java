@@ -34,11 +34,15 @@ public class Main {
             }
             if(isInfected[arrT[i][0]] && handshake[arrT[i][0]] <= k){
                 isInfected[arrT[i][1]] = true;
-                handshake[arrT[i][0]] += 1;
+                if(k == handshake[arrT[i][0]]){
+                    handshake[arrT[i][0]]++;
+                }
             }
             if(isInfected[arrT[i][1]] && handshake[arrT[i][1]] <= k){
                 isInfected[arrT[i][0]] = true;
-                handshake[arrT[i][1]] += 1;
+                if(k == handshake[arrT[i][1]]){
+                    handshake[arrT[i][1]]++;
+                }
             }
         }
 
